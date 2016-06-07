@@ -1,2 +1,2 @@
-# website for JP - Laywers
+# website for JP - Lawyers
 # Meteor
