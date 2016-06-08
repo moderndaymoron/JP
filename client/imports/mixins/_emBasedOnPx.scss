@@ -1,4 +1,4 @@
 
-@mixin em($pixles, $context: 16px) {
-  @return $pixels / $context * 1em;
+@function em($pix, $context: $core-context) {
+  @return ($pix / $context) * 1rem;
 }

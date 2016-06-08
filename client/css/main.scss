@@ -1,3 +1,15 @@
+// Dependencies
 @import "{}/node_modules/bootstrap/scss/bootstrap.scss";
-@import "{}/client/imports/sidebar/sidebar.scss";
+
+// Custom mixins and _variables
+@import "{}/client/imports/mixins/variables.scss";
 @import "{}/client/imports/mixins/emBasedOnPx.scss";
+
+// Import html specific SCSS
+@import "{}/client/imports/sidebar/sidebar.scss";
+
+// SCSS for static app elements
+
+.navbarContainer {
+  height:auto;
+}
