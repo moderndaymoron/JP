@@ -5,6 +5,9 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
 import { Home } from './imports/home/home.ts';
 import { About } from './imports/about/about.ts';
 import { Sidebar } from "./imports/sidebar/sidebar.ts";
+import { Staff } from "./imports/staff/staff.ts";
+import { ServicesMain } from "./imports/servicesMain/servicesMain.ts";
+import { Links } from "./imports/links/links.ts";
 import { ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig, RouterLink } from '@angular/router-deprecated';
 import { APP_BASE_HREF } from '@angular/common';
 
@@ -18,7 +21,10 @@ import { APP_BASE_HREF } from '@angular/common';
 
 @RouteConfig([
   { path: '/', as: 'Home', component: Home },
-  { path: '/about', as: 'About', component: About }
+  { path: '/about', as: 'About', component: About },
+  { path: '/staff', as: 'Staff', component: Staff },
+  { path: '/services', as: 'ServicesMain', component: ServicesMain },
+  { path: '/links', as: 'Links', component: Links }
 ])
 
 class JP {}
