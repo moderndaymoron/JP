@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import { Component, provide } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { bootstrap } from 'angular2-meteor-auto-bootstrap';
 import { Home } from './imports/home/home.ts';
 import { About } from './imports/about/about.ts';
 import { Sidebar } from "./imports/sidebar/sidebar.ts";

@@ -1,4 +1,4 @@
-import { Employees } from '../collections/employees.ts'
+import { Employees }    from '../collections/employees.ts'
 
 export function loadInfo() {
     if (Employees.find().count() === 0) {

@@ -1,4 +1,14 @@
 <h1> Staff variable = {{staff}} </h1>
+<div>
+    <h2>Starfsfólk</h2>
+    <ul>
+        <li *ngFor="let emp of employees">
+            {{emp.name}} | {{emp.description}}
+            <br>
+            <img src="{{emp.image}}" alt="Smiley face" height="100" width="42">
+        </li>
+    </ul>
+</div>
 <p>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
