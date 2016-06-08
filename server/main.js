@@ -1,5 +1,4 @@
 import { Meteor } from 'meteor/meteor';
+import { loadInfo } from './loadInfo.ts';
 
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+Meteor.startup(loadInfo);
