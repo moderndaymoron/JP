@@ -6,8 +6,8 @@
       &#9776;
     </button>
     <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-      <a class="navbar-brand" href="#">JP</a>
-      <ul class="nav navbar-nav">
+      <a class="navbar-brand" [routerLink]="['/Home']"><img src="/images/logoIce.png" alt="logo missing" /></a>
+      <ul class="nav navbar-nav navbar-bottom">
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['/Home']">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -15,22 +15,38 @@
           <a class="nav-link" [routerLink]="['/About']">Um okkur</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Fólkið okkar</a>
+          <a class="nav-link" [routerLink]="['/Staff']">Fólkið okkar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Þjónusta</a>
+          <a class="nav-link" [routerLink]="['/ServicesMain']">Þjónusta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tenglar</a>
+          <a class="nav-link" [routerLink]="['/Links']">Tenglar</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 <!-- HEADER ENDS -->
+
+<!-- MAIN CONTENT STARTS -->
 <div class="container col-md-9 sidebar">
   <router-outlet></router-outlet>
 </div>
+<!-- MAIN CONTENT ENDS -->
+
+<!-- SIDEBAR START -->
 <div class="container col-md-3 sidebar">
   <sidebar></sidebar>
 </div>
+<!-- SIDEBAR ENDS -->
+
+<!-- FOOTER STARTS -->
+<nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+  <div class="navbarFooter">
+    <p>
+      jp info: heimilisfang - sími - email - webmaster: REdesign (something else?)
+    </p>
+  </div>
+</nav>
+<!-- FOOTER ENDS -->
