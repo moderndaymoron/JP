@@ -14,8 +14,37 @@
   height:auto;
 }
 
+.navbarMenuList {
+
+  @media (min-width: 768px){
+
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .nav-item {
+
+    }
+  }
+}
+
 .navbar-bottom {
-  position: absolute;
-  left: 8.9em;
-  top: 5em;
+
+  li:active {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 768px){
+    position: absolute;
+    left: 9.1rem;
+    top: 4rem;
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 767px) {
+
+  }
+
 }

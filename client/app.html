@@ -1,15 +1,15 @@
 <base href="/">
 <!--  HEADER START  -->
 <nav class="navbar navbar-light bg-faded">
-  <div class="navbarContainer">
-    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+  <div class="container-fluid navbarContainer">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
       &#9776;
     </button>
-    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-      <a class="navbar-brand" [routerLink]="['/Home']"><img src="/images/logoIce.png" alt="logo missing" /></a>
-      <ul class="nav navbar-nav navbar-bottom">
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/Home']">Home <span class="sr-only">(current)</span></a>
+    <a class="navbar-brand hidden-sm-down" [routerLink]="['/Home']"><img src="/images/logoIce.png" alt="logo missing" /></a>
+    <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+      <ul class="nav navbar-nav navbarMenuList navbar-bottom">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Home']">Heim <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/About']">Um okkur</a>
@@ -30,19 +30,19 @@
 <!-- HEADER ENDS -->
 
 <!-- MAIN CONTENT STARTS -->
-<div class="container col-md-9 sidebar">
+<div class="container-fluid col-sm-12 col-md-9 sidebar">
   <router-outlet></router-outlet>
 </div>
 <!-- MAIN CONTENT ENDS -->
 
 <!-- SIDEBAR START -->
-<div class="container col-md-3 hidden-sm-down sidebar">
+<div class="container-fluid col-md-3 hidden-sm-down sidebar">
   <sidebar></sidebar>
 </div>
 <!-- SIDEBAR ENDS -->
 
 <!-- FOOTER STARTS -->
-<nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+<nav class="navbar navbar-fixed-bottom navbar-light bg-faded hidden-xs-down">
   <div class="navbarFooter">
     <p>
       jp info: heimilisfang - sími - email - webmaster: REdesign (something else?)
